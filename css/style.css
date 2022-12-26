@@ -1,198 +1,843 @@
+/* navbar */
+
+
 * {
+    box-sizing: border-box;
     margin: 0;
-    padding: 0
+    padding: 0;
+    font-size: 20px;
+
 }
 
-.container {
+body {
+
+    min-width: 400px;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.787);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 90px;
-    /* background-color: aqua; */
-    padding: 5px 10%;
-    backdrop-filter: blur(16px);
+    height: 85px;
+    padding: 5px 7%;
 }
 
-
-
-
-header a {
-    align-items: center;
-    /* padding-top: 20px;  */
-
-}
-
-header a button {
-    padding: 8px;
-    border-radius: 20px;
-    border: 2px solid white;
+.header .logo {
     cursor: pointer;
-    font-family: 'poppins';
 
 }
 
-
-
-
-.logo {
-    cursor: pointer;
-}
-
-.logo img {
-    height: 60px;
-    width: 130px;
+.header .logo img {
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
 }
 
 
-.links ol li a {
-    text-decoration: none;
-    color: white;
-    padding: 0px 20px;
-    font-size: 20px;
-}
-
-
-.links ol {
+.header .nav-links {
     list-style: none;
-    font-family: 'poppins';
-
-
 }
 
-.links ol li {
+.header .nav-links li {
     display: inline-block;
-    padding: 20px 5px;
+    padding: 0 10px;
 
 }
 
-
-
-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/castelmezzano-gef80a24fd_1920.jpg);
-    background-size: cover;
-    height: 670px;
-
-}
-.texto{
-    
-text-align: center;
-padding-top: 100px;
-
+.header .nav-links li:hover,
+/**/
+.overlay a:hover {
+    transform: scale(1.1);
 }
 
-.texto h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 80px;
-    color: white;
-}
+.header .nav-links a {
 
-.texto p{
-    color: white;
-font-family: 'Poppins', sans-serif;
-
-}
-
-.tours h2{
-    font-family: 23px;
+    color: #eceff1;
     font-family: 'poppins';
+}
+
+
+
+.menu {
+    display: none;
+}
+
+.header .btn button,
+/**/
+.header .menu button {
+    margin-left: 10px;
+    font-weight: 700;
+    color: black;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover,
+/**/
+.header .menu button:hover {
+    background-color: #e2f1f8;
+    transform: scale(1.1);
+}
+
+
+/**/
+@media screen and (max-width: 865px) {
+
+    .nav-links,
+    .btn {
+        display: none;
+    }
+
+    .menu {
+        display: inherit;
+    }
+}
+
+.nav-links {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/*Nav Mobile*/
+
+.header a {
+    text-decoration: none;
+    /*borramos el que teniamos en .header .nav-links a*/
+}
+
+.header .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.83);
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+.header .overlay .overlay-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .overlay a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    color: #eceff1;
+}
+
+
+
+.header .overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 65px;
+}
+
+@media screen and (max-height:450px) {
+    .header .overlay a {
+        font-size: 20px;
+    }
+
+    .header .overlay .close {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+
+
+
+
+/* carrusel*/
+
+
+.d-block {
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    width: 100% !important;
+}
+
+
+
+
+
+@media(max-width: 700px) {
+    .d-block {
+        height: 400px;
+    }
+
+
+
+}
+
+
+
+/* container de iconos */
+
+.container1 {
+    background-color: white;
+
+}
+
+
+
+.caja1 h1 {
+    font-family: 'poppins';
+    color: black;
+    font-size: 40px;
     text-align: center;
-    padding-top: 23px;
-    padding-bottom: 23px;
+    padding-top: 60px;
 }
 
-.card img{
-    height: 450px;
+.contenedor1 img {
+    width: 130px;
+    padding: 10px 10px;
+    margin-left: 15px;
+    margin-top: 10px;
+    justify-items: center;
 }
 
-.tours h2{
+
+.sub-container {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.caja1 {
+    display: block;
+    max-width: 1800px;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+
+.sub-container p {
+    padding: 10px 50px;
+    text-align: center;
+}
+
+
+.container1 {
+    display: block;
+
+}
+
+
+.contenedor2 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 33%;
+    flex-wrap: wrap;
+}
+
+.contenedor2 p {
+    color: black;
+    background-size: 'poppins';
+}
+
+@media(max-width: 733px) {
+    .sub-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0px;
+    }
+
+    .contenedor2 {
+        width: 70%;
+    }
+
+    .contenedor2 img {
+        width: 120px;
+        padding: 10px 10px;
+        margin-left: 15px;
+        margin-top: 10px;
+        justify-items: center;
+    }
+
+
+}
+
+@media(max-width: 617px) {
+    .caja1 h1 {
+        font-size: 25px;
+    }
+
+
+    .sub-container {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+
+    }
+
+    .container1 {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+
+
+    }
+
+
+    .sub-container p {
+        padding: 10px 0px;
+        text-align: center;
+    }
+
+
+
+}
+
+
+/* cards */
+.container5 h4 {
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'poppins';
+    font-size: 40px;
+
+}
+
+.container5 {
+    margin-bottom: 100px;
+}
+
+.cards h6 {
+    text-align: left;
+    font-family: 'poppins';
+    font-size: 20px;
+    justify-content: end;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.cards {
+    display: grid;
+    grid-template-areas:
+        "card1 card1 card1 card1 card4 card5 card5"
+        "card1 card1 card1 card1 card4 card5 card5"
+        "card2 card2 card3 card3 card4 card6 card6"
+        "card2 card2 card3 card3 card4 card6 card6"
+    ;
+    grid-template-rows: 150px 120px 150px 120px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr 3fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding: 40px 60px;
+
+}
+
+
+
+
+
+
+.card1 {
+    background-image: url(../img/BRASIL/pexels-florencia-potter-351283.jpg);
+    grid-area: card1;
+    /* width: 200px;
+    height: 230px;
+    display: inline-block; */
+    border-radius: 10px;
+    cursor: pointer;
+
+    background-position: center;
+    background-size: cover;
+    transition: all 0.3s ease 0s;
+}
+
+
+.card2 {
+    grid-area: card2;
+    /* width: 200px;
+    height: 230px;
+    display: inline-block; */
+    border-radius: 10px;
+    cursor: pointer;
+    background-image: url(../img/cancun/pexels-ricardo-esquivel-1784714.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: all 0.3s ease 0s;
+}
+
+
+.card3 {
+    grid-area: card3;
+    /* width: 200px;
+    height: 230px;
+    display: inline-block; */
+    border-radius: 10px;
+    cursor: pointer;
+    background-image: url(../img/ARGENTINA/pexels-kristina-gain-4042403.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: all 0.3s ease 0s;
+}
+
+.card4 {
+    grid-area: card4;
+    /* width: 200px;
+    height: 230px;
+    display: inline-block; */
+    border-radius: 10px;
+    cursor: pointer;
+    background-image: url(../img/vancouver/pexels-brayden-law-2096700.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: all 0.3s ease 0s;
+}
+
+
+
+.card5 {
+    grid-area: card5;
+    /* width: 200px;
+    height: 230px;
+    display: inline-block; */
+    border-radius: 10px;
+    cursor: pointer;
+    background-image: url(../img/peru/pexels-errin-casano-2356045.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: all 0.3s ease 0s;
+}
+
+.card6 {
+    grid-area: card6;
+    /* width: 200px;
+    height: 230px;
+    display: inline-block; */
+    border-radius: 10px;
+    cursor: pointer;
+    background-image: url(../img/EEUU/pexels-sobia-akhtar-5652364.jpg);
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+/* responsive */
+@media(max-width: 652px) {
+
+    .container5 h4 {
+        padding-top: 30px;
+        text-align: center;
+        font-family: 'poppins';
+        font-size: 25px;
+    }
+
+    .cards h6 {
+
+        font-size: 13px;
+
+
+    }
+
+
+    .cards {
+        display: grid;
+        grid-template-areas:
+            "card1 card1 card1 card1 card1 card5 card5 card5"
+            "card1 card1 card1 card1 card1 card5 card5 card5"
+            "card2 card2 card2 card2 card3 card3 card3 card3 "
+            "card2 card2 card2 card2 card3 card3 card3 card3 "
+            "card4 card4 card4 card6 card6 card6 card6 card6"
+            "card4 card4 card4 card6 card6 card6 card6 card6 "
+        ;
+        grid-template-rows: 100px 80px 100px 80px 100px 80px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 2fr 3fr 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        padding: 40px 27px;
+
+    }
+
+
+}
+
+/* .card1 :hover{
+    
+
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* promocion */
+
+
+.container6 {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../img/R.jfif);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.promo h6 {
+    text-align: center;
     color: white;
+    font-size: 30px;
+    font-family: 'poppins';
+
 }
 
-.tours{
-    background-color: black;
+.promo p {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-family: 'poppins';
+}
+
+
+button {
+    /* display: flex; */
+    color: black;
+    /* padding: 9px 25px; */
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.promo a {
+    display: inline-block;
+    color: black;
+
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
 }
 
 
 
 
-.container1{
+
+
+
+
+/* hoteles */
+
+/* .carta{
+
+    display: grid !important;
+grid-template-areas: 
+"carta1 carta1 carta2 carta2 carta2 carta2 carta3 carta3"
+"carta1 carta1 carta2 carta2 carta2 carta2 carta3 carta3"
+"carta1 carta1 carta2 carta2 carta2 carta2 carta4 carta4"
+"carta1 carta1 carta5 carta5 carta6 carta6 carta4 carta4"
+"carta1 carta1 carta5 carta5 carta6 carta6 carta4 carta4"
+;
+grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 2fr 1fr;
+grid-template-rows: 110px 110px 110px 110px 110px;
+grid-column-gap: 20px;
+grid-row-gap: 20px;
+padding: 40px 60px;
+}
+
+
+.carta1{
+    grid-area: carta1;
+    border-radius: 10px;
+    cursor: pointer;
+    background-image: url(../img/hoteles/calafate4.jpg);
+    background-position: center;
+    background-size: cover; 
+}
+
+.carta2{
+    grid-area: carta2;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    background-position: center;
+    background-size: cover; 
+}
+
+.carta3{
+    grid-area: carta3;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    background-position: center;
+    background-size: cover; 
+}
+
+.carta4{
+    grid-area: carta4;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    background-position: center;
+    background-size: cover; 
+}
+
+.carta5{
+    grid-area: carta5;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    background-position: center;
+    background-size: cover; 
+}
+
+.carta6{
+    grid-area: carta6;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    background-position: center;
+    background-size: cover; 
+}
+
+ */
+
+
+
+
+
+
+
+
+
+/* footer */
+
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #24262b;
+    padding: 70px 0;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+    font-family: 'poppins';
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: white;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+
+
+
+/* preguntas */
+
+
+.accordion-item {
+    width: 650px !important;
+}
+
+
+.accordion-flush {
     display: flex;
     flex-wrap: wrap;
 }
 
 
-.card{
-    width: 300px;
-height: 370px;
-/* background-image: url(../img/ARGENTINA/pexels-lucía-montenegro-12185637.jpg); */
-background-size: cover;
-border-radius: 13px;
-cursor: pointer;
-margin: 30px 15px;
-background-position: center;
-
+button h2 {
+    font-size: 20px;
+    font-family: 'poppins';
 }
 
-.card1{
-    background-image: url(../img/LONDRES/pexels-pixabay-280329.jpg);
-}
-
-.card2{
-    background-image: url(../img/ITALIA/pexels-khalid-ait-sayh-1701595.jpg);
-}
-
-.card3{
-    background-image: url(../img/ARGENTINA/pexels-lucía-montenegro-12185637.jpg);
-}
-
-.card4{
-    background-image: url(../img/JAPON/river-g03e57ef94_1920.jpg);
+.preguntas {
+    padding-top: 80px;
+    padding-bottom: 100px;
 }
 
 
-.card h3{
-color: white;
-text-align: center;
+.preguntas h1 {
+    text-align: center;
+    padding-bottom: 80px;
+    font-size: 45px;
+    font-family: 'poppins';
+}
+
+
+@media(min-width=430px) {
+
+    .preguntas h1 {
+        text-align: center;
+        padding-bottom: 80px;
+        font-size: 10px;
+        font-family: 'poppins';
+    }
+
 
 }
 
 
+/* suscribete */
+
+
+.container10 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mb-3 label {
+    font-family: 'poppins';
+    text-align: center;
+}
+
+.mb-3 input {
+    width: 540px;
+}
+
+
+.sus {
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 45px;
+    font-family: 'poppins';
+}
+
+form {
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 
+.enviar {
+    align-items: center;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.bt {
+    padding: 10px 25px;
+    font-family: 'poppins';
+}
