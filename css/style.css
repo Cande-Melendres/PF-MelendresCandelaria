@@ -708,6 +708,7 @@ ul {
     color: #bbbbbb;
     display: block;
     transition: all 0.3s ease;
+    font-family: 'poppins';
 }
 
 .footer-col ul li a:hover {
@@ -841,3 +842,20 @@ form {
     padding: 10px 25px;
     font-family: 'poppins';
 }
+
+
+
+
+@media (max-width: 585px){
+
+    .sus{font-size: 29px;}
+    
+    .mb-3 input{
+        width: 300px;
+    }
+    
+    
+    
+    
+    }
+    
