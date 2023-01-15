@@ -335,6 +335,7 @@ body {
     justify-content: end;
     padding-left: 15px;
     padding-top: 15px;
+    margin-bottom: 5px;
 }
 
 .cards {
@@ -361,16 +362,14 @@ body {
 .card1 {
     background-image: url(../img/BRASIL/pexels-florencia-potter-351283.jpg);
     grid-area: card1;
-    /* width: 200px;
-    height: 230px;
-    display: inline-block; */
     border-radius: 10px;
     cursor: pointer;
-
     background-position: center;
     background-size: cover;
-    transition: all 0.3s ease 0s;
+    
 }
+
+
 
 
 .card2 {
@@ -442,6 +441,20 @@ body {
 
 }
 
+.iconitos1{
+    display:flex;
+    margin-left: 10px;
+}
+
+.iconitos1 p{
+    font-family: 'poppins';
+    font-size:15px ;
+}
+
+
+
+
+
 /* responsive */
 @media(max-width: 652px) {
 
@@ -457,6 +470,15 @@ body {
         font-size: 13px;
 
 
+    }
+
+
+    .iconitos1 svg{
+        width: 17px;
+    }
+
+    .iconitos1 p{
+        font-size: 12px;
     }
 
 
@@ -565,7 +587,7 @@ button {
 
 /* hoteles */
 
-/* .carta{
+.carta{
 
     display: grid !important;
 grid-template-areas: 
@@ -587,60 +609,139 @@ padding: 40px 60px;
     grid-area: carta1;
     border-radius: 10px;
     cursor: pointer;
-    background-image: url(../img/hoteles/calafate4.jpg);
+    background-image: url(../img/hoteles/cancun3.jpg);
     background-position: center;
     background-size: cover; 
+    color: black;
 }
 
 .carta2{
     grid-area: carta2;
     border-radius: 10px;
     cursor: pointer;
-    
+    background-image: url(../img/hoteles/santacruz1.jpg);
     background-position: center;
     background-size: cover; 
+    color: black;
 }
 
 .carta3{
     grid-area: carta3;
     border-radius: 10px;
     cursor: pointer;
-    
+    background-image: url(../img/hoteles/machu.jpg);
     background-position: center;
     background-size: cover; 
+    color: black;
 }
 
 .carta4{
     grid-area: carta4;
     border-radius: 10px;
     cursor: pointer;
-    
+    background-image: url(../img/hoteles/vancouver1.jpg);
     background-position: center;
     background-size: cover; 
+    color: black;
 }
 
 .carta5{
     grid-area: carta5;
     border-radius: 10px;
     cursor: pointer;
-    
+    background-image: url(../img/hoteles/whashingthon.jpg);
     background-position: center;
     background-size: cover; 
+    color: black;
 }
 
 .carta6{
     grid-area: carta6;
     border-radius: 10px;
     cursor: pointer;
-    
+    background-image: url(../img/hoteles/riodejaneiro.jpg);
     background-position: center;
     background-size: cover; 
+    color: black;
 }
 
- */
+ 
 
 
 
+.iconitos{
+    display:flex;
+    margin-left: 10px;
+}
+
+.iconitos p{
+    font-family: 'poppins';
+    font-size:15px ;
+}
+
+.carta h6 {
+    text-align: left;
+    font-family: 'poppins';
+    font-size: 20px;
+    justify-content: end;
+    padding-left: 15px;
+    padding-top: 15px;
+    margin-bottom: 5px;
+}
+
+
+
+.container10 h3{
+text-align: center;
+padding-top: 30px;
+font-size: 40px;
+font-family: 'poppins';
+}
+
+
+
+@media(max-width: 652px) {
+
+    .container10 h3 {
+        padding-top: 30px;
+        text-align: center;
+        font-family: 'poppins';
+        font-size: 25px;
+    }
+
+    .carta h6 {
+        font-size: 13px;
+    }
+
+
+    .iconitos svg{
+        width: 17px;
+    }
+
+    .iconitos p{
+        font-size: 12px;
+    }
+
+    .carta {
+        display: grid;
+        grid-template-areas:
+            "carta1 carta1 carta1 carta1 carta1 carta5 carta5 carta5"
+            "carta1 carta1 carta1 carta1 carta1 carta5 carta5 carta5"
+            "carta2 carta2 carta2 carta2 carta3 carta3 carta3 carta3 "
+            "carta2 carta2 carta2 carta2 carta3 carta3 carta3 carta3 "
+            "carta4 carta4 carta4 carta6 carta6 carta6 carta6 carta6"
+            "carta4 carta4 carta4 carta6 carta6 carta6 carta6 carta6 "
+        ;
+        grid-template-rows: 100px 80px 100px 80px 100px 80px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 2fr 3fr 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        padding: 40px 27px;
+
+    }
+
+
+}
 
 
 
@@ -755,7 +856,7 @@ ul {
 
 
 .accordion-item {
-    width: 650px !important;
+    width: 50% ;
 }
 
 
@@ -784,18 +885,40 @@ button h2 {
 }
 
 
-@media(min-width=430px) {
+@media(max-width: 652px) {
 
     .preguntas h1 {
         text-align: center;
-        padding-bottom: 80px;
-        font-size: 10px;
+        padding-bottom: 50px;
+        font-size: 25px;
         font-family: 'poppins';
+    }
+
+    .accordion-flush{
+        flex-direction: column;
+        width: 100%;
+    }
+.accordion-item{
+    width: 500px;
+}
+
+}
+
+
+
+
+@media(max-width: 512px) {
+
+    .accordion-item{
+        width: 380px;
+    }
+    .accordion-flush{
+        flex-direction: column;
+        width: 380px;
     }
 
 
 }
-
 
 /* suscribete */
 
@@ -854,8 +977,6 @@ form {
         width: 300px;
     }
     
-    
-    
-    
+
     }
     
