@@ -59,7 +59,7 @@ body{
     display:none;
 }
 
-.header .btn button,
+.header .btn1 button,
 /**/.header .menu button{
     margin-left: 10px;
     font-weight: 700;
@@ -72,7 +72,7 @@ body{
     transition: all 0.3s ease 0s;
 }
 
-.header .btn button:hover,
+.header .btn1 button:hover,
 /**/.header .menu button:hover{
     background-color: #e2f1f8;
     transform: scale(1.1);
@@ -80,7 +80,7 @@ body{
 
 
 /**/@media screen and (max-width: 865px){
-    .nav-links, .btn {
+    .nav-links, .btn1 {
         display: none;
     }
     .menu {
@@ -153,18 +153,25 @@ body{
 
 
 
-/* carusel */
+/* carrusel */
 
 
 .d-block {
-    height: 600px;
+    height: 520px;
     background-size: cover;
     background-position: center;
     width: 100% !important;
 }
 
 
+.carousel-caption h5{
+    font-size: 55PX;
+    font-family: 'poppins';
+}
 
+.carousel-caption P{
+    font-family: 'poppins';
+}
 
 
 @media(max-width: 700px) {
@@ -178,6 +185,16 @@ body{
 
 
 
+
+
+.carousel-caption h5{
+    font-size: 55PX;
+    font-family: 'poppins';
+}
+
+.carousel-caption P{
+    font-family: 'poppins';
+}
 
 
 /* suscribete */
@@ -226,7 +243,12 @@ form {
     font-family: 'poppins';
 }
 
-
+button{
+    border: none;
+    border-radius: 50px;
+    background: #eceff1;
+    color: black;
+}
 
 
 @media (max-width: 585px){
@@ -349,6 +371,87 @@ ul {
 }
 
 
+/* cards */
+
+.container11{
+display: flex;
+flex-wrap: wrap;
+}
+
+.cartitas{
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.card{
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 120px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+.card img{
+    background-position: center;
+    height: 200px;
+}
+
+.card:hover{
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.texto{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+section{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+
+@media (max-width: 818px){
+.cartitas{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.card {
+    width: 15rem !important;
+}
+
+}
+
+
+
+@media (max-width: 579px){
+    .card{
+        width: 100% !important;
+
+    }
+}
+@media (max-width: 420px){
+.cartitas{
+    padding-left: 0px;
+    padding-right: 0px;
+    /* width: 80% !important; */
+}
+
+
+}
 
 
 
@@ -358,3 +461,77 @@ ul {
 
 
 
+
+
+
+/* suscribete */
+
+
+.container10 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mb-3 label {
+    font-family: 'poppins';
+    text-align: center;
+}
+
+.mb-3 input {
+    width: 540px;
+}
+
+
+.sus {
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 45px;
+    font-family: 'poppins';
+}
+
+form {
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.enviar {
+    align-items: center;
+}
+
+
+.bt {
+    padding: 10px 25px;
+    font-family: 'poppins';
+}
+
+
+
+
+@media (max-width: 585px){
+
+    .sus{font-size: 29px;}
+    
+    .mb-3 input{
+        width: 300px;
+    }
+    
+    
+
+    }
+    
+
+
+
+
+
+
+
+    .icon2{
+        display: flex;
+    }

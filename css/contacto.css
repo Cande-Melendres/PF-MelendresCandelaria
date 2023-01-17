@@ -157,36 +157,6 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  /* footer */
 
 
@@ -287,6 +257,100 @@ ul {
         width: 100%;
     }
 }
+
+
+
+
+
+
+section{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),  url(../img/pexels-element-digital-1051075.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.texto{
+display: flex;
+flex-direction: column;
+margin-top: 30px;
+background-color: rgba(255, 255, 255, 0.562);
+border-radius: 30px;
+padding-bottom: 60px;
+padding-left: 30px;
+padding-right: 30px;
+padding-top: 30px;
+margin-bottom: 30px;
+}
+
+.texto h3{
+    font-size: 40px;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    font-family: 'poppins';
+}
+
+
+
+input{
+    width: 450px;
+}
+
+
+
+
+
+
+
+
+
+.enviar {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+.bt {
+    padding: 10px 25px;
+    font-family: 'poppins';
+    border-radius: 40px;
+    border: none;
+}
+
+
+@media (max-width: 532px){
+    .texto h3{
+        font-size: 25px;
+        
+    }
+
+    .texto{
+        
+        margin-top: 30px;
+        background-color: rgba(255, 255, 255, 0.562);
+        border-radius: 30px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
+        margin-bottom: 30px;
+        }
+        
+        input{
+            width: 250px;
+        }
+
+}
+
 
 
 

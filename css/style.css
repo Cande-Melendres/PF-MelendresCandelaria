@@ -169,13 +169,20 @@ body {
 
 
 .d-block {
-    height: 600px;
+    height: 520px;
     background-size: cover;
     background-position: center;
     width: 100% !important;
 }
 
+.carousel-caption h5{
+    font-size: 55PX;
+    font-family: 'poppins';
+}
 
+.carousel-caption P{
+    font-family: 'poppins';
+}
 
 
 
@@ -369,7 +376,24 @@ body {
     
 }
 
-
+.card1:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+}
+.card2:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+}
+.card3:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+}
+.card4:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+}
+.card5:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+}
+.card6:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+}
 
 
 .card2 {
@@ -613,6 +637,28 @@ padding: 40px 60px;
     background-position: center;
     background-size: cover; 
     color: black;
+    
+}
+
+.carta1:hover{
+    
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+}
+.carta2:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+}
+.carta3:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+}
+.carta4:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+}
+.carta5:hover{
+    
+box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+}
+.carta6:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
 }
 
 .carta2{

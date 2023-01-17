@@ -157,14 +157,21 @@ body{
 
 
 .d-block {
-    height: 600px;
+    height: 520px;
     background-size: cover;
     background-position: center;
     width: 100% !important;
 }
 
 
+.carousel-caption h5{
+    font-size: 55PX;
+    font-family: 'poppins';
+}
 
+.carousel-caption P{
+    font-family: 'poppins';
+}
 
 
 @media(max-width: 700px) {
@@ -228,7 +235,12 @@ form {
     font-family: 'poppins';
 }
 
-
+button{
+    border: none;
+    border-radius: 50px;
+    background: #eceff1;
+    color: black;
+}
 
 
 @media (max-width: 585px){
@@ -353,4 +365,93 @@ ul {
 
 
 
+
+
+
+
+
+
+/* cards */
+
+.container11{
+    display: flex;
+    flex-wrap: wrap;
+    }
+    
+    .cartitas{
+        display: flex;
+        padding-left: 50px;
+        padding-right: 50px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    
+    
+    .card{
+        margin-left: 15px;
+        margin-right: 15px;
+        width: 120px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        cursor: pointer;
+    }
+    
+    
+    .card img{
+        background-position: center;
+        height: 200px;
+    }
+    
+    .card:hover{
+        
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .texto{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    
+    section{
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    
+    
+    @media (max-width: 818px){
+    .cartitas{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .card {
+        width: 15rem !important;
+    }
+    
+    }
+    
+    
+    
+    @media (max-width: 579px){
+        .card{
+            width: 100% !important;
+    
+        }
+    }
+    @media (max-width: 420px){
+    .cartitas{
+        padding-left: 0px;
+        padding-right: 0px;
+        /* width: 80% !important; */
+    }
+    
+    
+    }
+    
+    
 

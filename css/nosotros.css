@@ -165,13 +165,20 @@ body {
 
 
 .d-block {
-    height: 600px;
+    height: 520px;
     background-size: cover;
     background-position: center;
     width: 100% !important;
 }
 
+.carousel-caption h5{
+    font-size: 55PX;
+    font-family: 'poppins';
+}
 
+.carousel-caption P{
+    font-family: 'poppins';
+}
 
 
 
@@ -274,8 +281,7 @@ body {
         flex-direction: column;
     }
 
-
-
+}
 
 
     @media (max-width: 1091px) {
@@ -377,7 +383,12 @@ body {
         font-family: 'poppins';
     }
 
-
+button{
+    border: none;
+    border-radius: 50px;
+    background: #eceff1;
+    color: black;
+}
 
 
     @media (max-width: 585px) {
@@ -478,7 +489,7 @@ body {
     }
 
 
-
+/* footer */
 
     .container {
         max-width: 1170px;
@@ -577,4 +588,5 @@ body {
             width: 100%;
         }
     }
+    
     
