@@ -1,9 +1,16 @@
+$letra:'poppins';
+$centrado:center;
+
+
+
+
+
+
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* font-size: 20px; */
-
 }
 
 body{
@@ -15,7 +22,7 @@ body{
     background-color: rgba(0, 0, 0, 0.787);
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: $centrado;
     height: 85px;
     padding: 5px 7%;
 }
@@ -50,7 +57,7 @@ body{
 .header .nav-links a{
     
     color: #eceff1; 
-    font-family: 'poppins';
+    font-family: $letra;
 }
 
 
@@ -59,7 +66,7 @@ body{
     display:none;
 }
 
-.header .btn button,
+.header .btn1 button,
 /**/.header .menu button{
     margin-left: 10px;
     font-weight: 700;
@@ -72,7 +79,7 @@ body{
     transition: all 0.3s ease 0s;
 }
 
-.header .btn button:hover,
+.header .btn1 button:hover,
 /**/.header .menu button:hover{
     background-color: #e2f1f8;
     transform: scale(1.1);
@@ -80,7 +87,7 @@ body{
 
 
 /**/@media screen and (max-width: 865px){
-    .nav-links, .btn {
+    .nav-links, .btn1 {
         display: none;
     }
     .menu {
@@ -116,8 +123,8 @@ body{
     display: flex;
     height: 100%;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;    
+    align-items:$centrado;
+    justify-content: $centrado;    
 }
 
 .header .overlay a{
@@ -159,18 +166,18 @@ body{
 .d-block {
     height: 520px;
     background-size: cover;
-    background-position: center;
+    background-position: $centrado;
     width: 100% !important;
 }
 
 
 .carousel-caption h5{
     font-size: 55PX;
-    font-family: 'poppins';
+    font-family: $letra;
 }
 
 .carousel-caption P{
-    font-family: 'poppins';
+    font-family: $letra;
 }
 
 
@@ -194,14 +201,14 @@ body{
 
 .container10 {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: $centrado;
+    justify-content: $centrado;
     flex-direction: column;
 }
 
 .mb-3 label {
-    font-family: 'poppins';
-    text-align: center;
+    font-family: $letra;
+    text-align: $centrado;
 }
 
 .mb-3 input {
@@ -210,29 +217,29 @@ body{
 
 
 .sus {
-    text-align: center;
+    text-align: $centrado;
     padding-bottom: 40px;
     font-size: 45px;
-    font-family: 'poppins';
+    font-family: $letra;
 }
 
 form {
     padding-bottom: 100px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: $centrado;
 }
 
 
 
 .enviar {
-    align-items: center;
+    align-items: $centrado;
 }
 
 
 .bt {
     padding: 10px 25px;
-    font-family: 'poppins';
+    font-family: $letra;
 }
 
 button{
@@ -295,7 +302,7 @@ ul {
     margin-bottom: 35px;
     font-weight: 500;
     position: relative;
-    font-family: 'poppins';
+    font-family: $letra;
 }
 
 .footer-col h4::before {
@@ -322,7 +329,7 @@ ul {
     color: #bbbbbb;
     display: block;
     transition: all 0.3s ease;
-    font-family: 'poppins';
+    font-family: $letra;
 }
 
 .footer-col ul li a:hover {
@@ -336,7 +343,7 @@ ul {
     width: 40px;
     background-color: rgba(255, 255, 255, 0.2);
     margin: 0 10px 10px 0;
-    text-align: center;
+    text-align: $centrado;
     line-height: 40px;
     border-radius: 50%;
     color: #ffffff;
@@ -383,11 +390,13 @@ ul {
         padding-left: 50px;
         padding-right: 50px;
         flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
+        align-items: $centrado;
+        justify-content: $centrado;
     }
     
-    
+    .card-img-top{
+        object-fit: cover
+    }
     
     
     .card{
@@ -400,11 +409,30 @@ ul {
         padding: 5px;
         cursor: pointer;
     }
+    .btn-primary{
+        background-color: #24262b;
+        border-color: #24262b;
+        font-family:$letra;
+    }
+    .btn-primary:hover {
+        color: #fff;
+        background-color: #5d6061;
+        border-color: #5d6061;
+    }
     
-    
+    .btn{
+        border-radius:50px ;
+}
+    .card-title{
+        font-family: $letra;
+    }
+    .card-body p{
+        font-family: $letra;
+    }
     .card img{
-        background-position: center;
+        background-position: $centrado;
         height: 200px;
+        object-fit: cover;
     }
     
     .card:hover{
@@ -412,8 +440,9 @@ ul {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .texto{
-        text-align: center;
+        text-align: $centrado;
         margin-bottom: 30px;
+        font-family: $letra;
     }
     
     

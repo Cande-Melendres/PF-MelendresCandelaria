@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* font-size: 20px; */
 }
 
 body {
@@ -51,7 +50,7 @@ body {
   display: none;
 }
 
-.header .btn button,
+.header .btn1 button,
 .header .menu button {
   margin-left: 10px;
   font-weight: 700;
@@ -64,7 +63,7 @@ body {
   transition: all 0.3s ease 0s;
 }
 
-.header .btn button:hover,
+.header .btn1 button:hover,
 .header .menu button:hover {
   background-color: #e2f1f8;
   transform: scale(1.1);
@@ -72,7 +71,7 @@ body {
 
 /**/
 @media screen and (max-width: 865px) {
-  .nav-links, .btn {
+  .nav-links, .btn1 {
     display: none;
   }
   .menu {
@@ -324,6 +323,11 @@ ul {
   justify-content: center;
 }
 
+.card-img-top {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .card {
   margin-left: 15px;
   margin-right: 15px;
@@ -335,9 +339,35 @@ ul {
   cursor: pointer;
 }
 
+.btn-primary {
+  background-color: #24262b;
+  border-color: #24262b;
+  font-family: "poppins";
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #5d6061;
+  border-color: #5d6061;
+}
+
+.btn {
+  border-radius: 50px;
+}
+
+.card-title {
+  font-family: "poppins";
+}
+
+.card-body p {
+  font-family: "poppins";
+}
+
 .card img {
   background-position: center;
   height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card:hover {
@@ -347,6 +377,7 @@ ul {
 .texto {
   text-align: center;
   margin-bottom: 30px;
+  font-family: "poppins";
 }
 
 section {

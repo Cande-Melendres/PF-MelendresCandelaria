@@ -1,4 +1,7 @@
-
+$letra:'poppins';
+$centrar:center;
+$cover:cover;
+$flexible:flex;
 
 
 
@@ -6,8 +9,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* font-size: 20px; */
-
 }
 
 body{
@@ -17,9 +18,9 @@ body{
 
 .header{
     background-color: rgba(0, 0, 0, 0.787);
-    display: flex;
+    display: $flexible;
     justify-content: space-between;
-    align-items: center;
+    align-items: $centrar;
     height: 85px;
     padding: 5px 7%;
 }
@@ -42,7 +43,7 @@ body{
 
 .header .nav-links li{
     display: inline-block;
- padding: 0 10px;   
+    padding: 0 10px;   
 
 }
 
@@ -54,7 +55,7 @@ body{
 .header .nav-links a{
     
     color: #eceff1; 
-    font-family: 'poppins';
+    font-family: $letra;
 }
 
 
@@ -117,11 +118,11 @@ body{
 }
 
 .header .overlay .overlay-content{
-    display: flex;
+    display: $flexible;
     height: 100%;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;    
+    align-items: $centrar;
+    justify-content: $centrar;    
 }
 
 .header .overlay a{
@@ -160,13 +161,13 @@ body{
  /* footer */
 
 
- .container {
+.container {
     max-width: 1170px;
     margin: auto;
 }
 
 .row {
-    display: flex;
+    display: $flexible;
     flex-wrap: wrap;
 }
 
@@ -191,7 +192,7 @@ ul {
     margin-bottom: 35px;
     font-weight: 500;
     position: relative;
-    font-family: 'poppins';
+    font-family: $letra;
 }
 
 .footer-col h4::before {
@@ -218,7 +219,7 @@ ul {
     color: #bbbbbb;
     display: block;
     transition: all 0.3s ease;
-    font-family: 'poppins';
+    font-family: $letra;
 }
 
 .footer-col ul li a:hover {
@@ -232,7 +233,7 @@ ul {
     width: 40px;
     background-color: rgba(255, 255, 255, 0.2);
     margin: 0 10px 10px 0;
-    text-align: center;
+    text-align: $centrar;
     line-height: 40px;
     border-radius: 50%;
     color: #ffffff;
@@ -265,17 +266,17 @@ ul {
 
 section{
     background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),  url(../img/pexels-element-digital-1051075.jpg);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-position: $centrar;
+    background-size: $cover;
+    display: $flexible;
+    justify-content: $centrar;
+    align-items: $centrar;
 }
 
 
 
 .texto{
-display: flex;
+display: $flexible;
 flex-direction: column;
 margin-top: 30px;
 background-color: rgba(255, 255, 255, 0.562);
@@ -289,13 +290,13 @@ margin-bottom: 30px;
 
 .texto h3{
     font-size: 40px;
-    text-align: center;
+    text-align: $centrar;
 }
 
 form{
-    display: flex;
+    display: $flexible;
     flex-direction: column;
-    font-family: 'poppins';
+    font-family: $letra;
 }
 
 
@@ -305,23 +306,16 @@ input{
 }
 
 
-
-
-
-
-
-
-
 .enviar {
-    align-items: center;
-    justify-content: center;
-    display: flex;
+    align-items: $centrar;
+    justify-content: $centrar;
+    display: $flexible;
 }
 
 
 .bt {
     padding: 10px 25px;
-    font-family: 'poppins';
+    font-family: $letra;
     border-radius: 40px;
     border: none;
 }
@@ -350,7 +344,3 @@ input{
         }
 
 }
-
-
-
-

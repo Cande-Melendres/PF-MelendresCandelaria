@@ -1,8 +1,12 @@
+$centrar:center;
+$flexible:flex;
+
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* font-size: 20px; */
+
 
 }
 
@@ -13,9 +17,9 @@ body{
 
 .header{
     background-color: rgba(0, 0, 0, 0.787);
-    display: flex;
+    display: $flexible;
     justify-content: space-between;
-    align-items: center;
+    align-items:$centrar;
     height: 85px;
     padding: 5px 7%;
 }
@@ -113,11 +117,11 @@ body{
 }
 
 .header .overlay .overlay-content{
-    display: flex;
+    display: $flexible;
     height: 100%;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;    
+    align-items: $centrar;
+    justify-content: $centrar;    
 }
 
 .header .overlay a{
@@ -159,7 +163,7 @@ body{
 .d-block {
     height: 520px;
     background-size: cover;
-    background-position: center;
+    background-position: $centrar;
     width: 100% !important;
 }
 
@@ -201,15 +205,15 @@ body{
 
 
 .container10 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: $flexible;
+    align-items: $centrar;
+    justify-content: $centrar;
     flex-direction: column;
 }
 
 .mb-3 label {
     font-family: 'poppins';
-    text-align: center;
+    text-align: $centrar;
 }
 
 .mb-3 input {
@@ -218,7 +222,7 @@ body{
 
 
 .sus {
-    text-align: center;
+    text-align: $centrar;
     padding-bottom: 40px;
     font-size: 45px;
     font-family: 'poppins';
@@ -226,15 +230,15 @@ body{
 
 form {
     padding-bottom: 100px;
-    display: flex;
+    display: $flexible;
     flex-direction: column;
-    align-items: center;
+    align-items: $centrar;
 }
 
 
 
 .enviar {
-    align-items: center;
+    align-items: $centrar;
 }
 
 
@@ -278,7 +282,7 @@ button{
 }
 
 .row {
-    display: flex;
+    display: $flexible;
     flex-wrap: wrap;
 }
 
@@ -344,7 +348,7 @@ ul {
     width: 40px;
     background-color: rgba(255, 255, 255, 0.2);
     margin: 0 10px 10px 0;
-    text-align: center;
+    text-align:$centrar;
     line-height: 40px;
     border-radius: 50%;
     color: #ffffff;
@@ -374,22 +378,33 @@ ul {
 /* cards */
 
 .container11{
-display: flex;
+display: $flexible;
 flex-wrap: wrap;
 }
 
 .cartitas{
-    display: flex;
+    display: $flexible;
     padding-left: 50px;
     padding-right: 50px;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    align-items: $centrar;
+    justify-content: $centrar;
 }
 
+.btn-primary{
+    background-color: #24262b;
+    border-color: #24262b;
+    font-family:'poppins';
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #5d6061;
+    border-color: #5d6061;
+}
 
-
-
+.btn{
+    border-radius:50px ;
+}
 .card{
     margin-left: 15px;
     margin-right: 15px;
@@ -400,10 +415,14 @@ flex-wrap: wrap;
     padding: 5px;
     cursor: pointer;
 }
-
-
+.card-title{
+    font-family: 'poppins';
+}
+.card-body p{
+    font-family: 'poppins';
+}
 .card img{
-    background-position: center;
+    background-position: $centrar;
     height: 200px;
 }
 
@@ -412,8 +431,9 @@ flex-wrap: wrap;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .texto{
-    text-align: center;
+    text-align: $centrar;
     margin-bottom: 30px;
+    font-family: 'poppins';
 }
 
 
@@ -468,15 +488,15 @@ section{
 
 
 .container10 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: $flexible;
+    align-items: $centrar;
+    justify-content: $centrar;
     flex-direction: column;
 }
 
 .mb-3 label {
     font-family: 'poppins';
-    text-align: center;
+    text-align: $centrar;
 }
 
 .mb-3 input {
@@ -485,7 +505,7 @@ section{
 
 
 .sus {
-    text-align: center;
+    text-align: $centrar;
     padding-bottom: 40px;
     font-size: 45px;
     font-family: 'poppins';
@@ -493,15 +513,15 @@ section{
 
 form {
     padding-bottom: 100px;
-    display: flex;
+    display: $flexible;
     flex-direction: column;
-    align-items: center;
+    align-items: $centrar;
 }
 
 
 
 .enviar {
-    align-items: center;
+    align-items: $centrar;
 }
 
 

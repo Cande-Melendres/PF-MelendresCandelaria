@@ -88,7 +88,6 @@ body {
 /*Nav Mobile*/
 .header a {
   text-decoration: none;
-  /*borramos el que teniamos en .header .nav-links a*/
 }
 
 .header .overlay {
@@ -214,7 +213,7 @@ body {
 
 .contenedor2 p {
   color: black;
-  background-size: "poppins";
+  font-family: "poppins";
 }
 
 @media (max-width: 733px) {

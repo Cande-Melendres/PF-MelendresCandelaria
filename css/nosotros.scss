@@ -1,3 +1,5 @@
+$poppins:'poppins';
+
 body {
 
     min-width: 400px;
@@ -43,7 +45,7 @@ body {
 .header .nav-links a {
 
     color: #eceff1;
-    font-family: 'poppins';
+    font-family: $poppins;
 }
 
 
@@ -165,11 +167,11 @@ body {
 
 .carousel-caption h5{
     font-size: 55PX;
-    font-family: 'poppins';
+    font-family: $poppins;
 }
 
 .carousel-caption P{
-    font-family: 'poppins';
+    font-family: $poppins;
 }
 
 
@@ -195,13 +197,13 @@ body {
 .nosotros h1 {
     font-size: 40px;
     text-align: center;
-    font-family: 'poppins';
+    font-family: $poppins;
     padding-bottom: 50px;
 }
 
 .nosotros p {
     text-align: center;
-    font-family: 'poppins';
+    font-family: $poppins;
     padding: 0px 110px;
     font-size: 20px;
 }
@@ -251,7 +253,7 @@ body {
 
     .nosotros p {
         font-size: 15px;
-        font-family: 'poppins';
+        font-family: $poppins;
         padding: 0px 5px;
     }
 
@@ -336,7 +338,7 @@ body {
     }
 
     .mb-3 label {
-        font-family: 'poppins';
+        font-family: $poppins;
         text-align: center;
     }
 
@@ -349,7 +351,7 @@ body {
         text-align: center;
         padding-bottom: 40px;
         font-size: 45px;
-        font-family: 'poppins';
+        font-family: $poppins;
     }
 
     form {
@@ -368,7 +370,7 @@ body {
 
     .bt {
         padding: 10px 25px;
-        font-family: 'poppins';
+        font-family: $poppins;
     }
 
 button{
@@ -424,7 +426,7 @@ button{
     
     button h2 {
         font-size: 20px;
-        font-family: 'poppins';
+        font-family: $poppins;
     }
     
     .preguntas {
@@ -437,7 +439,7 @@ button{
         text-align: center;
         padding-bottom: 80px;
         font-size: 45px;
-        font-family: 'poppins';
+        font-family: $poppins;
     }
     
     
@@ -447,7 +449,7 @@ button{
             text-align: center;
             padding-bottom: 50px;
             font-size: 25px;
-            font-family: 'poppins';
+            font-family: $poppins;
         }
     
         .accordion-flush{
@@ -510,7 +512,7 @@ button{
         margin-bottom: 35px;
         font-weight: 500;
         position: relative;
-        font-family: 'poppins';
+        font-family: $poppins;
     }
     
     .footer-col h4::before {
@@ -537,7 +539,7 @@ button{
         color: #bbbbbb;
         display: block;
         transition: all 0.3s ease;
-        font-family: 'poppins';
+        font-family: $poppins;
     }
     
     .footer-col ul li a:hover {
